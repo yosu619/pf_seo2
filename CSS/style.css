@@ -20,6 +20,34 @@ html {
   max-width: 10%; /* 画像サイズの例。適宜調整 */
 }
 
+/*ローディング画面*/
+#loading {
+  transition: all 10s; /*ローディングにかかる時間*/
+  background-color: #FFF;
+  z-index: 999;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.loading-text {
+  font-weight: bold;
+  text-align: center;
+}
+
+.spin {
+  width: 64px;
+  height: auto;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* ==========
 header
 ==========*/
