@@ -1,0 +1,1177 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+.top__body-wrapper {
+  max-width: 100%;
+  background-image: url(../img/bk-img_TOP_cording_op70.jpg);
+  background-repeat: repeat-y;
+  background-position: left;
+  background-size: 100% auto;
+}
+.decorative-container {
+  position: relative; /* 子要素の絶対配置の基準 */
+  width: 100%;
+  height: 0px; /* 必要に応じて調整 */
+}
+/* 共通のスタイル */
+.decorative-container__img {
+  position: absolute;
+  max-width: 10%; /* 画像サイズの例。適宜調整 */
+}
+
+/* ==========
+header
+==========*/
+.header__decorator-singlemark {
+  top: 500px;
+  left: 0;
+}
+.header__decorator-doublemark {
+  top: 800px;
+  left: 35.6%;
+  transform: translate(-50%, -50%);
+}
+.header__decorator-hex {
+  top: 850px;
+  left: 0;
+}
+.header__decorator-round {
+  top: 100px;
+  right: 100px;
+}
+#header {
+  width: 18.75vw;
+  height: 1020px;
+  background-color: #333333;
+  margin: 0 auto;
+  position: relative; /* 子要素の絶対配置の基準 */
+}
+/* .header__vertical を右側中央に配置 */
+.header__vertical {
+  position: absolute;
+  max-width: 100%;
+  top: 50%;
+  right: 0; /* 右端に配置 */
+  transform: translate(250px, -50%); /* 右方向へ150px移動 */
+}
+.header__catchphrase {
+  color: #333333;
+  writing-mode: vertical-rl; /* 縦書き（右から左） */
+  text-orientation: upright; /* 文字を直立表示 */
+  font-size: 30px;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 80%;
+  max-width: 166px;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+/* #header 内にテキストを中央配置するためのコンテナ */
+.header__content {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 縦方向中央に揃える */
+}
+
+.header__content p {
+  color: #ffffff;
+}
+
+/* 「妹尾　洋介」を縦書き、30px に設定 */
+.header__name {
+  writing-mode: vertical-rl; /* 縦書き（右から左） */
+  text-orientation: upright; /* 文字を直立させる */
+  font-size: 30px;
+  margin: 0;
+}
+
+/* 「ポートフォリオ」を横書き、20px に設定（右側に添える） */
+.header__portfolio {
+  writing-mode: vertical-rl; /* 縦書き（右から左） */
+  text-orientation: upright; /* 文字を直立させる */
+  font-size: 20px;
+  margin: 0 0 0 10px; /* 左側に10pxの余白で隣接 */
+}
+
+/* .header__nav {
+  margin-top: 200px;
+} */
+
+.navbar__item p {
+  color: #939393;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.navbar__item {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.humburger__navlist {
+  display: none;
+}
+
+.Profile__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 400px;
+  background-color: #f7ebd3e6;
+}
+.Profile__title img {
+  max-width: 100%;
+  width: 26px;
+  height: 26px;
+  padding: 10px 0 10px 0;
+}
+.Profile__name {
+  color: #333333;
+  font-size: 30px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  white-space: normal; /* 改行を許可 */
+}
+.Profile__name-decorative {
+  color: #7c766a;
+  font-size: 20px;
+  transform: rotate(90deg) translate(-220%, 180%); /*(Y,X)*/
+}
+.Profile__contents {
+  max-width: 100%;
+  height: 500px;
+  background-color: #d3ac6766;
+}
+.Profile__contents-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Profile__contents-items {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.Profile__contents-items p {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.Profile__contents-sentence li {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
+.Profile__contents-img {
+  width: 300px;
+  height: 300px;
+}
+
+/* Concept */
+.Concept__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 400px;
+  background-color: #f7ebd3e6;
+}
+.Concept__title img {
+  max-width: 100%;
+  width: 26px;
+  height: 26px;
+  padding: 10px 0 10px 0;
+}
+.Concept__name {
+  color: #333333;
+  font-size: 30px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  white-space: normal; /* 改行を許可 */
+}
+.Concept__name-decorative {
+  color: #7c766a;
+  font-size: 20px;
+  transform: rotate(90deg) translate(-100%, 180%); /*(Y,X)*/
+}
+.Concept__wrapper {
+  background-color: #d3ac6766;
+  max-width: 100%;
+  padding: 100px 0;
+}
+
+.Concept__wrapper p {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
+.Concept__contents-decorative {
+  flex-direction: column;
+  max-width: 26px;
+  margin-bottom: 70px;
+  margin-right: 10px;
+}
+.Concept__contents-upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Concept__upper-img,
+.Concept__lower-img {
+  width: 30%;
+  height: 30%;
+  max-width: 490px;
+}
+.Concept__upper-img {
+  margin-left: 10%;
+}
+.Concept__lower-img {
+  margin-right: 10%;
+}
+.Concept__contents-lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* works */
+
+.works__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 400px;
+  background-color: #f7ebd3e6;
+}
+.works__title img {
+  max-width: 100%;
+  width: 26px;
+  height: 26px;
+  padding: 10px 0 10px 0;
+}
+.works__name {
+  color: #333333;
+  font-size: 30px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  white-space: normal; /* 改行を許可 */
+}
+.works__name-decorative {
+  color: #7c766a;
+  font-size: 20px;
+  transform: rotate(90deg) translate(-250%, 180%); /*(Y,X)*/
+}
+.works__wrapper {
+  max-width: 100%;
+  height: 1200px;
+  background-color: #d3ac6766;
+  padding-top: 50px;
+}
+.works__contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列レイアウト */
+  gap: 20px; /* アイテム間の余白 */
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.works__contents-wrapper {
+  background-color: #f7ebd3;
+  padding: 10px;
+}
+.works__items-info {
+  display: flex; /* 子要素をフレックスボックス化 */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.works__item-category {
+  color: #7c766a;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.works__item-title {
+  color: #333333;
+  font-size: 16px;
+  margin-left: 20px;
+}
+.works__item-type {
+  display: flex; /* 子要素をフレックスボックス化 */
+  align-items: center; /* 縦方向の中央揃え */
+  justify-content: center; /* 横方向の中央揃え */
+  max-width: 100%;
+  width: 153px;
+  height: 25px;
+  background-color: #9e814d;
+}
+.works__item-type p {
+  max-width: 100%;
+  color: #ffffff;
+}
+.btn {
+  max-width: 100%;
+  width: 270px;
+  height: 78px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.works__btn-moreview {
+  max-width: 100%;
+  width: 270px;
+  height: 78px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btn img {
+  height: auto;
+  left: 0;
+  position: absolute;
+  width: 265px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn img:last-of-type {
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.btn:hover img {
+  opacity: 1;
+}
+/* service */
+.Service__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 400px;
+  background-color: #f7ebd3e6;
+}
+.Service__title img {
+  max-width: 100%;
+  width: 26px;
+  height: 26px;
+  padding: 10px 0 10px 0;
+}
+.Service__name {
+  color: #333333;
+  font-size: 30px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  white-space: normal; /* 改行を許可 */
+}
+.Service__name-decorative {
+  color: #7c766a;
+  font-size: 20px;
+  transform: rotate(90deg) translate(-260%, 180%); /*(Y,X)*/
+}
+.Service__decorative-container {
+  position: absolute;
+  max-width: 14%; /* 画像サイズの例。適宜調整 */
+}
+.Service__decorator-singlemark {
+  top: 500px;
+  left: 0;
+}
+.Service__decorator-doublemark {
+  top: 800px;
+  transform: translate(614%, 50%);
+}
+.service__wrapper {
+  max-width: 100%;
+  background-color: #d3ac6766;
+  padding: 50px;
+}
+/* テーブル */
+.service__container-design {
+  max-width: 910px;
+  background-color: #38322a;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  /* height: 1000px; */
+}
+.service__container-cording {
+  background-color: #38322a;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  height: 1600px;
+}
+.service__container-videoediting {
+  background-color: #38322a;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  height: 1000px;
+}
+.service__title {
+  color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 140px;
+}
+.service__description {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.service__description p {
+  color: #ffffff;
+  line-height: 30px;
+}
+/* テーブル */
+.service__contents-table {
+  width: 70%;
+  border-collapse: collapse;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 30px auto;
+}
+.service__contents-table th {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  background-color: #38322a; /* 適宜背景色を調整 */
+  border-bottom: 2px solid white;
+}
+.service__contents-table td {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  padding: 40px;
+  background-color: #38322a; /* 適宜背景色を調整 */
+  border-bottom: 1px solid white;
+  line-height: 25px;
+}
+.service__closeArea {
+  width: 20%;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-right: 150px;
+  background-color: #939393;
+}
+.service__closeArea-closebox {
+  background-color: #ccc;
+  margin: 0 auto;
+}
+.service__closebtn {
+  color: #ffffff;
+  background-color: #939300;
+}
+
+/* ==========
+service アコーディオン
+==========*/
+.accordion__inner {
+  display: none;
+}
+.plus-btn {
+  width: 170px;
+  margin-top: 40px;
+  margin-left: auto;
+  height: 50px;
+  position: relative;
+  padding-left: 60px;
+  margin-right: 50px;
+  position: relative;
+}
+.plus-btn::before {
+  content: "スキルを見る";
+  color: #fff;
+  line-height: 50px;
+}
+.plus-icon {
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.plus-icon::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plus-icon::after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 2px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plus-btn.open::before {
+  content: "閉じる";
+}
+.open .plus-icon::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  top: 20px;
+  left: 9px;
+  transform: rotate(45deg);
+}
+.open .plus-icon::after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 2px;
+  background-color: #fff;
+  top: 9px;
+  left: 20px;
+  transform: rotate(45deg);
+}
+
+/* Contact */
+.Contact__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 400px;
+  background-color: #f7ebd3e6;
+}
+.Contact__title img {
+  max-width: 100%;
+  width: 26px;
+  height: 26px;
+  padding: 10px 0 10px 0;
+}
+.Contact__name {
+  color: #333333;
+  font-size: 30px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  white-space: normal; /* 改行を許可 */
+}
+.Contact__name-decorative {
+  color: #7c766a;
+  font-size: 20px;
+  transform: rotate(90deg) translate(-280%, 180%); /*(Y,X)*/
+}
+/* フォームの外枠 */
+.form-container {
+  width: 600px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* タイトル */
+.form-title {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* 各項目（横並びにする） */
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+/* ラベルと「必須」を揃える */
+.label-wrapper {
+  display: flex;
+  justify-content: space-between; /* 左にラベル、右に「必須」 */
+  width: 150px; /* ラベルエリアの幅を統一 */
+  align-items: center;
+}
+
+/* ラベル */
+label {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* 必須マーク */
+.required {
+  color: red;
+  font-size: 12px;
+}
+
+/* 入力フィールド */
+input,
+textarea {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* テキストエリア */
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* 送信ボタン */
+.Contact__btn-send {
+  max-width: 100%;
+  width: 149px;
+  height: 49px;
+  margin-left: 400px;
+}
+/* 営業時間 */
+.Buisinesshours__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 400px;
+  background-color: #f7ebd3e6;
+}
+.Buisinesshours__title img {
+  max-width: 100%;
+  width: 26px;
+  height: 26px;
+  padding: 10px 0 10px 0;
+}
+
+.Buisinesshours__name {
+  color: #333333;
+  font-size: 30px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  white-space: normal; /* 改行を許可 */
+}
+.Buisinesshours__name-decorative {
+  color: #7c766a;
+  font-size: 20px;
+  transform: rotate(90deg) translate(-75%, 180%); /*(Y,X)*/
+}
+.Buisinesshours__wrapper {
+  max-width: 100%;
+  height: 400px;
+  background-color: #d3ac6766;
+  padding-top: 80px;
+}
+.Buisinesshours__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Buisinesshours__contents-left {
+  text-align: center;
+  margin-right: 50px;
+}
+.Buisinesshours__contents-left-title {
+  color: #333333;
+  font-size: 18px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  white-space: normal; /* 改行を許可 */
+  margin: 0 auto;
+}
+.Buisinesshours__contents-left-details {
+  margin-bottom: 100px;
+  border-top: 1px solid #333333; /* 上の線 */
+  padding-top: 48px;
+  margin-top: 50px; /* 余白を確保 */
+}
+.Buisinesshours__contents-right {
+  text-align: center;
+  margin-left: 50px;
+}
+.Buisinesshours__contents-right-title {
+  color: #333333;
+  font-size: 18px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  white-space: normal; /* 改行を許可 */
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.Buisinesshours__contents-right-details {
+  margin-bottom: 100px;
+  border-top: 1px solid #333333; /* 上の線 */
+  padding-top: 50px;
+  margin-top: 60px; /* 余白を確保 */
+}
+.top__footer-wrapper {
+  max-width: 100%;
+  height: 600px;
+  background-color: #f7ebd3e6;
+}
+.footer__nav {
+  width: 100%;
+}
+.footer__logo {
+  max-width: 1100px;
+  padding-top: 50px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo-items {
+  max-width: 50%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__content {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 縦方向中央に揃える */
+}
+
+.footer__content p {
+  color: #333333;
+}
+
+/* 「妹尾　洋介」を縦書き、30px に設定 */
+.footer__name {
+  writing-mode: vertical-rl; /* 縦書き（右から左） */
+  text-orientation: upright; /* 文字を直立させる */
+  font-size: 30px;
+}
+
+/* 「ポートフォリオ」を横書き、20px に設定（右側に添える） */
+.footer__portfolio {
+  writing-mode: vertical-rl; /* 縦書き（右から左） */
+  text-orientation: upright; /* 文字を直立させる */
+  font-size: 20px;
+}
+.footer__navbar-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.footer__navbar-item p {
+  color: #939393;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer__navbar-item {
+  color: #452c21;
+  text-align: center;
+  margin-top: 40px;
+}
+.copyright {
+  text-align: center;
+  padding-top: 100px;
+  color: #333333;
+}
+
+/* sub__header */
+.sub__body-wrapper {
+  max-width: 100%;
+  height: 2000px;
+  background-image: url(../img/bk-img_TOP_cording_op70.jpg);
+  background-repeat: repeat-y;
+  background-position: left;
+  background-size: 100% auto;
+}
+header .container__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+header {
+  max-width: 100%;
+  height: 200px;
+  background-color: #f7ebd3e6;
+}
+.sub-header {
+  height: 162px;
+  display: flex;
+  align-items: center;
+}
+.sub__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  width: 100%;
+  margin-left: 3%;
+}
+.sub__header__nav {
+  width: 100%;
+  max-width: 700px;
+}
+.sub__header-img {
+  width: 100px;
+}
+
+.sub__header__navbar-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6.8%;
+  width: 100%;
+}
+.sub__header-navbaritem p {
+  color: #939393;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.sub__header-navbaritem {
+  color: #452c21;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* sub__footer */
+.sub__footer-wrapper {
+  max-width: 100%;
+  height: 600px;
+  background-color: #f7ebd3e6;
+}
+/* works_制作実績 */
+
+.works-products__wrapper {
+  max-width: 100%;
+  background-color: #d3ac6766;
+  padding: 50px 0 140px;
+}
+.works-products__contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列レイアウト */
+  gap: 20px; /* アイテム間の余白 */
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* 制作実績_詳細_バナー */
+.portfolio__wrapper {
+  background-color: #d3ac6766;
+  padding: 50px 20px 35px;
+}
+.portfolio__contents-img {
+  max-width: 100%;
+  width: 483px;
+  margin: 0 auto;
+  background-color: #f7ebd3;
+}
+.portfolio__contents-img img {
+  max-width: 100%;
+  width: 460px;
+  display: block;
+  margin: 0 auto;
+}
+.portfolio__contentsinfo {
+  max-width: 100%;
+  max-width: 997px;
+  background-color: #f7ebd3;
+  margin: 50px auto 0;
+}
+.portfolio__sub-inner {
+  max-width: 845px;
+  margin: 0 auto;
+  padding: 40px 10px;
+}
+.portfolio__contentsinfo--items-upper {
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
+}
+.portfolio__contentsinfo--items--left {
+  /* background-color:blue; */
+  background-color: #f7ebd3;
+}
+.portfolio__contentsinfo--items-category {
+  /* background-color:blue; */
+  background-color: #f7ebd3;
+  margin-bottom: 10px;
+}
+.portfolio__contentsinfo--items--right {
+  background-color: #a6926d;
+  width: 137px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+.portfolio__contentsinfo--items--right p {
+  color: #ffffff;
+}
+
+.portfolio__contentsinfo--items-lower {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.portfolio__contentsinfo--items-description {
+  background-color: #f7ebd3;
+  display: flex;
+  position: relative;
+  /* place-items: ; */
+  /* margin-top: 10px; */
+}
+.portfolio__contentsinfo--items-description::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #333333;
+  right: 0;
+}
+.portfolio__contentsinfo--items-description p {
+  color: #333333;
+  line-height: 20px;
+  letter-spacing: 5px;
+  padding-right: 20px;
+}
+.portfolio__contentsinfo--items-detail {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.portfolio__contentsinfo--items-lower-right {
+  min-width: 200px;
+  padding-left: 20px;
+}
+
+/* その他の制作実績__タイトル */
+.otherproduct__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 400px;
+  background-color: #f7ebd3e6;
+}
+.otherproduct__title img {
+  max-width: 100%;
+  width: 26px;
+  height: 26px;
+  padding: 10px 0 10px 0;
+}
+.otherproduct__name {
+  color: #333333;
+  font-size: 30px;
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  white-space: normal; /* 改行を許可 */
+}
+.otherproduct__name-decorative {
+  color: #7c766a;
+  font-size: 20px;
+  transform: rotate(90deg) translate(-420%, 180%); /*(Y,X)*/
+}
+
+/* otherworks_その他の制作実績 */
+.works-products__text-area {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.works-hero__text {
+  margin-bottom: 70px;
+  font-size: 18px;
+}
+.works-products__text {
+  line-height: 2.125;
+  font-size: 16px;
+}
+.works-container {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+.categories {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.category-btn {
+  position: relative;
+}
+.item {
+  display: none;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item.show {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+.otherworks-products__wrapper {
+  max-width: 100%;
+  background-color: #d3ac6766;
+  padding: 50px 0 100px;
+}
+.otherworks-products__contents {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列レイアウト */
+  gap: 20px; /* アイテム間の余白 */
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+/* 制作実績_詳細_ */
+/* 制作実績_詳細_バナー */
+
+@media screen and (max-width:1100px) {
+  .hamburger-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  .hamburger{
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      z-index: 9999;
+      background-color: #9e814d;
+      border-radius: 50%;
+  }
+  
+  .hamburger span{
+      width: 30px;
+      height: 2px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 14px;
+      transition: 0.3s;
+  }
+  .hamburger span::before{
+      width: 30px;
+      height: 2px;
+      background-color: #ffffff;
+      position: absolute;
+      content: "";
+      top: -12px;
+      transition: 0.3s;
+  }
+  .hamburger span::after{
+      width: 30px;
+      height: 2px;
+      background-color: #ffffff;
+      position: absolute;
+      content: "";
+      bottom:-12px;
+      transition: 0.3s;
+  }
+  
+  .open span{
+      background-color: transparent;
+  }
+  .open span::before{
+      transform:rotate(45deg);
+      top:0;
+  }
+  .open span::after{
+      transform:rotate(-45deg);
+      bottom:0;
+  }
+  
+  .humburger__nav-sp{
+      position:absolute;
+      z-index: 9998;
+      width: 100%;
+      height: 100vh;
+      background-color: #00000096;
+  }
+  
+  .humburger__nav-sp,.humburger__navlist{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      gap: 20px;
+  }
+
+  /* ////////////////////////////////////////////////////////////////////// */
+  
+  @media screen and (max-width:767px){
+  
+
+/* testcode */
+
+.vertical-text-3lines {
+  writing-mode: vertical-rl; /* 縦書き */
+  text-orientation: upright; /* 文字を直立表示 */
+  column-count: 3; /* 3列に分割 */
+  column-gap: 1em; /* 列間の隙間（必要に応じて調整） */
+  white-space: normal; /* 改行を許可 */
+  margin: 0 auto;
+}
+.testcode {
+  display: grid;
+  place-items: center;
+  /* height: 200px; */
+  border: 1px solid #000;
+}
+
+/* 0% (完全に透明) の場合、アルファ値は「00」 */
+/* 100% (完全に不透明) の場合、アルファ値は「FF」 */
+
+/* 透明度 (%)16進数アルファ値 */
+/* 10%		1A */
+/* 20%		33 */
+/* 30%		4D */
+/* 40%		66 */
+/* 50%		80 */
+/* 60%		99 */
+/* 70%		B3 */
+/* 80%		CC */
+/* 90%		E6 */
+/* 100%	    FF */
