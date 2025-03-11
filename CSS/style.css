@@ -22,7 +22,7 @@ html {
 
 /*ローディング画面*/
 #loading {
-  transition: all 10s; /*ローディングにかかる時間*/
+  transition: all 5s; /*ローディングにかかる時間*/
   background-color: #FFF;
   z-index: 999;
   position: fixed;
@@ -131,6 +131,9 @@ header
   margin-top: 200px;
 } */
 
+.humburger__nav-sp{
+  display: none;
+}
 .navbar__item p {
   color: #939393;
   text-align: center;
@@ -140,10 +143,6 @@ header
   color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
-}
-
-.humburger__navlist {
-  display: none;
 }
 
 .Profile__title {
@@ -1101,9 +1100,9 @@ header {
   }
   .hamburger{
       display: block;
-      width: 30px;
-      height: 30px;
-      position: absolute;
+      width: 50px;
+      height: 50px;
+      position: fixed;
       right: 10px;
       top: 10px;
       cursor: pointer;
@@ -1117,7 +1116,8 @@ header {
       height: 2px;
       background-color: #ffffff;
       position: absolute;
-      top: 14px;
+      top: 23px;
+        left: 10px;
       transition: 0.3s;
   }
   .hamburger span::before{
@@ -1152,25 +1152,28 @@ header {
   }
   
   .humburger__nav-sp{
-      position:absolute;
+    display: none;
+      position:fixed;
       z-index: 9998;
       width: 100%;
       height: 100vh;
-      background-color: #00000096;
+      background-color: #333333;
+      top: 0;
+      left: 0;
   }
+}
+  /* //////////////////////////////スマホ版-375px-iphoneSE//////////////////////////////////////// */
   
-  .humburger__nav-sp,.humburger__navlist{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      gap: 20px;
+  @media screen and (max-width:375px){
+    .top__body-wrapper{
+      max-width: 100%;
+      width: auto;
+      /* background-image: url(../img/bk-img_TOP_cording_op70.jpg);
+      background-repeat: repeat-y;
+      background-position: left;
+      background-size: 100% auto; */
+    }
   }
-
-  /* ////////////////////////////////////////////////////////////////////// */
-  
-  @media screen and (max-width:767px){
-  
 
 /* testcode */
 
@@ -1202,4 +1205,4 @@ header {
 /* 70%		B3 */
 /* 80%		CC */
 /* 90%		E6 */
-/* 100%	    FF */
+/* 100%	  FF */
